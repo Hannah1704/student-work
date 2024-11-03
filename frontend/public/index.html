@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Groovy Music</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png" />
+
+  </head>
+
+  <body>
+    <h1
+      style="
+      
+        font-size: 8rem;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Baloo 2', Arial, sans-serif;
+        letter-spacing: 0.5rem;
+        background: linear-gradient(90deg, #cf1271, #330df3, #55ccff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: colorShift 3s ease-in-out infinite;
+        text-shadow: 3px 3px 10px rgba(53, 5, 60, 0.2);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      "
+      onmouseover="this.style.transform='scale(1.1)'; this.style.textDecoration='underline';"
+      onmouseout="this.style.transform='scale(1)'; this.style.textDecoration='none';"
+    >
+      G R O O V Y
+    </h1>
+
+    <div id="root"></div>
+
+    <script type="text/javascript" src="bundle.js"></script>
+
+    <style>
+      @keyframes colorShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </body>
+</html>

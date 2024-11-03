@@ -1,0 +1,44 @@
+.login-form 
+{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px; 
+    margin: auto;
+    text-align: center; 
+  }
+  
+  .login-form h1 
+  {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase; 
+    animation: wave 2s infinite; 
+  }
+  
+  .login-form input 
+  {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin: 10px 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+  }
+  
+  .login-form input:focus 
+  {
+    background-color: #ffcccb; 
+  }
+  
+  @keyframes wave 
+  {
+    0%, 100% 
+    {
+      transform: translateY(0);
+    }
+    50% 
+    {
+      transform: translateY(-5px);
+    }
+  }
+  
